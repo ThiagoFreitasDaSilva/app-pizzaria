@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_pizza/app/presentation/ui/pages/home.page.dart';
+import 'package:projeto_pizza/app/presentation/ui/pages/home/home.page.dart';
+import 'package:projeto_pizza/app/presentation/ui/pages/login/login.page.dart';
 import 'package:projeto_pizza/core/packages/getit/get_it.package.dart';
 
 main() {
@@ -13,10 +14,12 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.from(
-          colorScheme: ColorScheme.fromSwatch(
-              primarySwatch: Colors.purple, backgroundColor: Colors.white)),
-      home: const HomePage(),
-    );
+        theme: ThemeData.from(
+            colorScheme: ColorScheme.fromSwatch(
+                primarySwatch: Colors.purple, backgroundColor: Colors.white)),
+        home: Scaffold(
+          appBar: AppBar(),
+          body: const LoginPage(),
+        ));
   }
 }

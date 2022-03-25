@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_pizza/app/presentation/ui/pages/home/home.page.dart';
 import 'package:projeto_pizza/app/presentation/ui/pages/login/login.page.dart';
 import 'package:projeto_pizza/core/packages/getit/get_it.package.dart';
 

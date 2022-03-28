@@ -10,7 +10,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final formKey = GlobalKey();
 
-  Widget formFields() {
+  Widget getFormFields() {
     return Column(children: [
       TextFormField(
         decoration: const InputDecoration(
@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 const SizedBox(height: 100),
-                formFields(),
+                getFormFields(),
                 SizedBox(
                   height: 50,
                   width: 200,

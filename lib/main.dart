@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_pizza/app/presentation/ui/pages/login/login.page.dart';
+import 'package:projeto_pizza/app/presentation/ui/pages/choose_pizza/choose_pizza.page.dart';
 import 'package:projeto_pizza/core/packages/getit/get_it.package.dart';
 
 main() {
@@ -18,7 +18,7 @@ class AppWidget extends StatelessWidget {
                 primarySwatch: Colors.purple, backgroundColor: Colors.white)),
         home: Scaffold(
           appBar: AppBar(),
-          body: const LoginPage(),
+          body: const ChoosePizzaPage(),
         ));
   }
 }
